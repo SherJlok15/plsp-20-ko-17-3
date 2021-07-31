@@ -1,0 +1,268 @@
+@import "../../style/_variables.scss";
+
+.admin-add-lesson {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: $main-white-color;
+  border-radius: 10px;
+  font-family: $text-regular;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .block_1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .block_2 {
+      width: 100%;
+      margin: 50px 0;
+    }
+
+
+
+  }
+
+  &__control-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+
+    div {
+      text-align: center;
+      font-size: $smoll-text-font-size;
+    }
+  }
+
+  &__title {
+    padding-bottom: 20px;
+  }
+
+  &__change-part {
+    display: flex;
+    flex-direction: column;
+    .title {
+      text-align: left;
+    }
+
+    .item {
+      display: flex;
+      transition: 0.5s;
+      padding: 5px;
+      img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      input {
+        display: none;
+      }
+      &:hover {
+        color: $main-blue-light-opasity-color;
+      }
+    }
+
+    .item-checked {
+      padding: 5px;
+      transition: 0.5s;
+      color: $main-blue-color;
+      display: flex;
+      img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      input {
+        display: none;
+      }
+    }
+
+    .new-item {
+      margin: 20px 0;
+      label {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: $main-green-color;
+          padding-bottom: 10px;
+        }
+        input {
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid $main-grey-color;
+          font-size: $text-font-size;
+
+          &:focus {
+            outline: none;
+            border: 1px solid $main-blue-color;
+          }
+          &:focus::placeholder {
+            color: $main-blue-color;
+          }
+          &::placeholder {
+            font-family: $text-regular;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__lessons {
+    padding-top: 20px;
+    .title {
+      text-align: left;
+    }
+    .item {
+      padding: 5px;
+    }
+  }
+
+  &__add-lessons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .add-title {
+      padding-bottom: 20px;
+      width: 100%;
+      .title {
+
+      }
+      input {
+        display: block;
+        width: 98%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $main-grey-color;
+        font-size: $text-font-size;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $main-blue-color;
+        }
+        &:focus::placeholder {
+          color: $main-blue-color;
+        }
+        &::placeholder {
+          font-family: $text-regular;
+        }
+      }
+    }
+
+    .add-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .title {
+
+      }
+      .items {
+        .item {
+          display: flex;
+          align-items: center;
+          padding: 5px 0;
+          transition: 0.5s;
+          &:hover {
+            color: $main-blue-light-opasity-color;
+          }
+          span {
+
+          }
+          img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding-right: 10px;
+          }
+          input {
+            display: none;
+          }
+        }
+
+        .item--checked {
+          display: flex;
+          align-items: center;
+          color: $main-blue-color;
+          padding: 5px 0;
+          transition: 0.5s;
+          span {
+
+          }
+          img {
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding-right: 10px;
+          }
+          input {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__add-lesson-content {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    .add-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      .title {
+
+      }
+
+      textarea {
+        font-family: inherit;
+        border-radius: 5px;
+        font-size: $text-font-size;
+        width: 100%;
+      }
+      input {
+        display: block;
+        width: 98%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $main-grey-color;
+        font-size: $text-font-size;
+        &:focus {
+          outline: none;
+          border: 1px solid $main-blue-color;
+        }
+        &:focus::placeholder {
+          color: $main-blue-color;
+        }
+        &::placeholder {
+          font-family: $text-regular;
+        }
+      }
+      .add-item-button {
+        background-color: $main-green-color;
+      }
+    }
+  }
+
+
+
+  &__modal-confirm-buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    button {
+      margin: 20px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

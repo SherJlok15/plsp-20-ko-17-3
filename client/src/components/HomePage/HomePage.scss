@@ -1,0 +1,104 @@
+@import "../../style/_variables.scss";
+
+.main {
+  .admin-home-page {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    &__admin-panel-link {
+      text-align: center;
+      padding-bottom: 30px;
+      a {
+        text-decoration: none;
+        padding: 20px;
+      }
+    }
+  }
+
+  .login-page {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $text-font-size;
+    color: $main-dark-color;
+
+    &__login-form {
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+      padding: 15px 60px 30px;
+      background-color: $main-white-color;
+      border-top: 10px solid $main-dark-color;
+      border-bottom: 10px solid $main-dark-color;
+      box-shadow: 1px 1px 15px $main-dark-color;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 5px 0;
+        width: 100%;
+        span {
+          padding-bottom: 15px;
+          font-size: $title_3-font-size;
+          font-weight: bold;
+        }
+        input {
+          margin: 0 5px;
+          min-width: 300px;
+          border: 1px solid $main-grey-opasity-color;
+          border-radius: 5px;
+          padding: 10px;
+          font-size: inherit;
+          transition: 0.5s;
+          font-family: inherit;
+          color: inherit;
+          &:focus {
+            outline: none;
+            border: 1px solid $main-blue-color;
+          }
+          &:focus::placeholder {
+            transition: 0.5s;
+            color: $main-blue-color;
+          }
+          &::placeholder {
+            font-family: inherit;
+          }
+        }
+      }
+
+      .login-error {
+        min-height: 20px;
+        height: 100%;
+        color: $main-red-color;
+        font-size: $smoll-text-font-size;
+      }
+    }
+}
+  .user-home-page {
+    color: $main-white-color;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        padding: 20px 100px;
+      }
+
+    }
+  }
+}

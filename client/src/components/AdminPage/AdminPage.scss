@@ -1,0 +1,23 @@
+@import "../../style/_variables.scss";
+
+.admin-page {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    a {
+      text-decoration: none;
+      text-align: center;
+      max-width: 100%;
+      width: 100%;
+      padding: 10px 30px;
+      margin: 10px 0;
+      span {
+        color: $main-red-color
+      }
+    }
+  }
+}

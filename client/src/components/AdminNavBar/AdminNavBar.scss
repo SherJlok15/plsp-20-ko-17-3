@@ -1,0 +1,53 @@
+@import "../../style/_variables.scss";
+.admin-nav-bar {
+  background-color: $main-dark-color;
+  box-shadow: 1px 5px 15px $main-dark-color;
+  color: $main-white-color;
+  border-radius: 0 0 10px 10px;
+  padding: 5px 0;
+  &__list {
+    min-height: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      padding: 10px;
+      transition: 0.5s;
+      &:hover a, &:hover span{
+        color: $main-blue-color;
+        transition: 0.5s;
+      }
+      &:hover {
+        cursor: pointer;
+        border-top: 1px solid $main-white-color;
+        border-bottom: 1px solid $main-white-color;
+        border-radius: 5px;
+        transition: 0.5s;
+      }
+      &:active a, &:active span {
+        color: $main-red-color;
+      }
+      a {
+        transition: 0.5s;
+        color: $main-white-color;
+        text-decoration: none;
+
+      }
+
+      span {
+        transition: 0.5s;
+      }
+    }
+  }
+}

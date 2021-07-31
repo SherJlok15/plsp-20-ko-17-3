@@ -1,0 +1,47 @@
+@import "../../style/_variables.scss";
+
+.admin-add-news {
+  margin: 30px 0;
+
+  &__title {
+    text-align: left;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    background-color: $main-white-color;
+    border-radius: 10px;
+    padding: 20px;
+    label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      span {
+
+      }
+
+      input {
+        margin-bottom: 30px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $main-grey-color;
+
+        &:focus {
+          outline: none;
+          border: 1px solid $main-blue-color;
+        }
+        &:focus::placeholder {
+          color: $main-blue-color;
+        }
+        &::placeholder {
+          font-family: $text-regular;
+        }
+      }
+    }
+  }
+}

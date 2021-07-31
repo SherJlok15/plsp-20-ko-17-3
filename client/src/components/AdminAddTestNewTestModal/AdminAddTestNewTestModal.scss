@@ -1,0 +1,54 @@
+@import "../../style/_variables.scss";
+
+.new-test-modal-close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.new-test-modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: $text-font-size;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $main-grey-opasity-color;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 30px;
+    .item-title {
+      display: flex;
+      justify-content: center;
+      h3 {
+        display: flex;
+        span {
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .item-rating {
+      display: flex;
+      justify-content: flex-end;
+      color: $main-red-opasity-color;
+    }
+
+    .item-options {
+      margin: 20px 0;
+      padding: 20px;
+      display: grid;
+      grid-template-columns:  1fr;
+      grid-template-rows: auto;
+      grid-column-gap: 30px;
+      grid-row-gap: 15px;
+      justify-items: start;
+      align-items: center;
+      .item-option {
+
+      }
+    }
+  }
+}

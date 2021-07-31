@@ -1,0 +1,285 @@
+@import "../../style/_variables.scss";
+
+.edit-lesson-add-panel {
+  background-color: $main-white-color;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  &__change-module-type {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    label {
+      display: flex;
+      margin: 0 30px;
+      transition: 0.5s;
+      img {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+      }
+      span {
+
+      }
+      input {
+        display: none;
+      }
+      &:hover {
+        color: $main-blue-light-opasity-color;
+      }
+    }
+  }
+
+  &__module-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    input {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $main-grey-color;
+      font-size: $text-font-size;
+      width: 100%;
+      &:focus {
+        outline: none;
+        border: 1px solid $main-blue-color;
+      }
+      &:focus::placeholder {
+        color: $main-blue-color;
+      }
+      &::placeholder {
+        font-family: $text-regular;
+      }
+    }
+
+    textarea {
+      display: block;
+      font-family: inherit;
+      border-radius: 5px;
+      font-size: $text-font-size;
+      width: 100%;
+    }
+  }
+
+  &__control-buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.edit-lesson-edit-panel {
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $main-white-color;
+
+  &__title-edit-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $main-grey-color;
+      font-size: $text-font-size;
+      margin: 20px 0;
+      width: 100%;
+      &:focus {
+        outline: none;
+        border: 1px solid $main-blue-color;
+      }
+      &:focus::placeholder {
+        color: $main-blue-color;
+      }
+      &::placeholder {
+        font-family: $text-regular;
+      }
+    }
+    .title-edit-panel-control-buttons {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+      button {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  &__content-edit-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    textarea {
+      display: block;
+      font-family: inherit;
+      border-radius: 5px;
+      font-size: $text-font-size;
+      width: 100%;
+      margin: 20px 0;
+    }
+    input {
+      width: 100%;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid $main-grey-color;
+      font-size: $text-font-size;
+      margin: 20px 0;
+      &:focus {
+        outline: none;
+        border: 1px solid $main-blue-color;
+      }
+      &:focus::placeholder {
+        color: $main-blue-color;
+      }
+      &::placeholder {
+        font-family: $text-regular;
+      }
+    }
+    .content-edit-panel-control-buttons {
+      button {
+        margin: 0 10px;
+      }
+    }
+  }
+
+}
+
+.edit-lesson-content {
+  color: $main-dark-color;
+  background-color: $main-white-color;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .title {
+
+    }
+    .title-control-buttons {
+     padding-left: 20px;
+     visibility: hidden;
+    }
+
+    &:hover .title-control-buttons {
+      visibility: visible;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    .title_big {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      transition: 0.5s;
+      .title_big-control-buttons {
+        visibility: hidden;
+      }
+      &:hover .title_big-control-buttons{
+        visibility: visible;
+      }
+      &:hover {
+        background-color: $main-grey-opasity-color;
+        border-radius: 10px;
+      }
+    }
+
+    .title_smoll {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+      .title_smoll-control-buttons {
+        visibility: hidden;
+      }
+      &:hover {
+        background-color: $main-grey-opasity-color;
+        border-radius: 10px;
+      }
+      &:hover .title_smoll-control-buttons{
+        visibility: visible;
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px 0;
+      p {
+        color: inherit;
+        white-space: pre-wrap;
+        font-size: $text-font-size;
+        text-align: justify;
+        line-height: 30px;
+      }
+      .text-control-buttons {
+        visibility: hidden;
+      }
+      &:hover {
+        background-color: $main-grey-opasity-color;
+        border-radius: 10px;
+      }
+      &:hover .text-control-buttons{
+        visibility: visible;
+      }
+    }
+
+    .img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0 20px 0;
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px $main-grey-color;
+      }
+      .img-control-buttons {
+        visibility: hidden;
+        padding: 5px 0;
+      }
+
+      &:hover .img-control-buttons {
+        visibility: visible;
+      }
+      &:hover {
+        background-color: $main-grey-opasity-color;
+        border-radius: 10px;
+      }
+    }
+
+    .video {
+      padding: 10px 0;
+    }
+    .video-control-buttons {
+      visibility: hidden;
+      padding: 5px 0;
+    }
+
+    &:hover .video-control-buttons {
+      visibility: visible;
+    }
+    &:hover {
+      background-color: $main-grey-opasity-color;
+      border-radius: 10px;
+    }
+  }
+}

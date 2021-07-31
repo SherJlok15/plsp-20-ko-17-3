@@ -1,0 +1,27 @@
+@import "../../style/_variables.scss";
+.all-parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  &__title {
+    
+  }
+
+  &__part {
+      min-width: 50%;
+
+  }
+
+  &__part-link {
+    display: flex;
+    text-decoration: none;
+
+    h3 {
+      margin-right: 10px;
+      color: $main-dark-color;
+    }
+
+  }
+}

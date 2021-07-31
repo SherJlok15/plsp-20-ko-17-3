@@ -1,0 +1,44 @@
+@import "../../style/_variables.scss";
+.all-news {
+  h3 {
+  text-align: left;
+  }
+  .is-empty {
+    color: $main-white-color;
+    border-left: 3px solid $main-blue-color;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 3px solid $main-blue-color;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    &__info {
+      color: $main-white-color;
+      display: flex;
+      flex-direction: column;
+      font-size: $smoll-text-font-size;
+      div {
+        margin: 5px;
+        span {
+          color: $main-dark-color;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &__text {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      color: $main-dark-color;
+      background-color: $main-white-color;
+      line-height: 25px;
+    }
+  }
+}

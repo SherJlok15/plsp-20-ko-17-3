@@ -1,0 +1,91 @@
+@import "../../style/_variables.scss";
+
+.new-lesson-modal {
+  color: $main-dark-color;
+
+  .modal-close-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .lessson-title {
+    text-align: left;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    &:hover .control-button{
+      visibility: visible;
+    }
+
+    &:hover {
+      background-color: $main-grey-opasity-color;
+      border-radius: 10px;
+    }
+
+    .title-big-item {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+
+    }
+
+    .title-smoll-item {
+      display: flex;
+      justify-content: flex-start;
+      padding: 5px 0;
+    }
+
+    .text-item {
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px 0;
+      color: inherit;
+      p {
+        white-space: pre-wrap;
+        font-size: $text-font-size;
+        text-align: justify;
+        line-height: 30px;
+      }
+
+    }
+
+    .img-item {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 0 20px 0;
+
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px $main-grey-color;
+      }
+    }
+
+    .video-item {
+
+    }
+
+    .control-button {
+      display: flex;
+      justify-content: center;
+      visibility: hidden;
+      margin: 5px 0;
+      span {
+        margin: 0 3px;
+      }
+    }
+  }
+}

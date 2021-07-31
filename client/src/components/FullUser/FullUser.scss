@@ -1,0 +1,36 @@
+@import "../../style/_variables.scss";
+
+.user-log {
+  color: $main-dark-color;
+  &__table {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    table {
+      border-collapse: collapse;
+      font-size: $smoll-text-font-size;
+
+      caption {
+        margin: 10px 0;
+        color: $main-white-color;
+        font-size: $text-font-size;
+        span {
+          color: $main-dark-color;
+        }
+      }
+      thead {
+        background-color: $main-white-color;
+        font-weight: bold;
+      }
+      tbody {
+        color: $main-white-color;
+      }
+      td, th {
+        padding: 10px;
+      }
+    }
+    table, th, td {
+      border: 1px solid $main-dark-color;
+    }
+  }
+}

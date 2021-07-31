@@ -1,0 +1,77 @@
+@import "../../style/_variables.scss";
+
+.user-test-result {
+  display: flex;
+  flex-direction: column;
+  &__close-button {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__user-rating {
+    text-align: center;
+    color: $main-green-color;
+    padding: 20px 0;
+
+    span {
+      color: $main-blue-light-color;
+    }
+  }
+
+  &__color-info {
+    text-align: left;
+    font-style: italic;
+    font-size: $smoll-text-font-size;
+    p {
+      padding: 5px;
+    }
+
+  }
+
+  &__body {
+    .body-item {
+        background-color: $main-grey-opasity-color;
+        border-radius: 10px;
+        margin: 30px 0;
+        padding: 30px;
+      .item-text {
+        text-align: center;
+        font-size: $title_3-font-size;
+      }
+
+      .item-rating {
+        text-align: right;
+        font-style: italic;
+        font-size: $smoll-text-font-size;
+        color: $main-red-color;
+      }
+
+      .options-container {
+        margin: 20px 0;
+        padding: 20px;
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 30px;
+        grid-row-gap: 15px;
+        justify-items: start;
+        align-items: center;
+        .option {
+          .green {
+            color: $main-green-color;
+          }
+
+          .red {
+            color: $main-red-color;
+          }
+
+          .blue {
+            color: $main-blue-color;
+          }
+        }
+      }
+    }
+  }
+
+
+}

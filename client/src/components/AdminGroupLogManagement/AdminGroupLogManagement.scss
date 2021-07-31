@@ -1,0 +1,376 @@
+@import "../../style/_variables.scss";
+
+.admin-grop-log-management {
+
+  &__content {
+    margin: 30px 0;
+    table {
+      border-collapse: collapse;
+      font-size: $smoll-text-font-size;
+      margin: 0 auto;
+      caption {
+        margin: 10px 0;
+        color: $main-white-color;
+        font-size: $text-font-size;
+        span {
+          color: $main-dark-color;
+        }
+      }
+      thead {
+        background-color: $main-white-color;
+        font-weight: bold;
+      }
+      tbody {
+        color: $main-white-color;
+      }
+      td, th {
+        padding: 10px;
+        transition: 0.5s;
+      }
+    }
+    table, th, td {
+      border: 1px solid $main-dark-color;
+      text-align: center;
+
+    }
+
+    .user-information {
+
+      button {
+        background-color: $main-white-color;
+        font-size: $little-text-font-size;
+        color: $main-dark-color;
+        border-radius: 10px;
+        transition: 0.2s;
+        border: none;
+        padding: 7px;
+        transition: 0.5s;
+        &:disabled {
+          color: $main-dark-color;
+          background-color: $main-white-color;
+        }
+
+      }
+
+      &:hover td{
+        color: $main-orange-color;
+        transition: 0.5s;
+      }
+
+      &:hover .edit-user-button{
+        background-color: $main-blue-light-color;
+        font-size: $little-text-font-size;
+        color: $main-white-color;
+        border-radius: 10px;
+        transition: 0.2s;
+        border: none;
+        padding: 7px;
+        margin: 0;
+        transition: 0.5s;
+        &:hover {
+          cursor: pointer;
+          background-color: $main-blue-color;
+          color: $main-dark-color;
+        }
+
+        &:focus {
+          outline: none;
+          color: $main-red-color;
+        }
+      }
+
+      &:hover .edit-user-button--disabled{
+        background-color: $main-dark-color;
+        font-size: $little-text-font-size;
+        color: $main-white-color;
+        border-radius: 10px;
+        transition: 0.2s;
+        border: none;
+        padding: 7px;
+        margin: 0;
+        transition: 0.5s;
+      }
+
+      &:hover .delete-user-button{
+        background-color: $main-red-opasity-color;
+        font-size: $little-text-font-size;
+        color: $main-white-color;
+        border-radius: 10px;
+        transition: 0.2s;
+        border: none;
+        padding: 7px;
+        transition: 0.5s;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $main-red-color;
+          color: $main-dark-color;
+        }
+
+        &:focus {
+          outline: none;
+          color: $main-red-color;
+        }
+      }
+
+      &:hover .delete-user-button--disabled{
+        background-color: $main-dark-color;
+        font-size: $little-text-font-size;
+        color:  $main-white-color;
+        border-radius: 10px;
+        transition: 0.2s;
+        border: none;
+        padding: 7px;
+        margin: 0;
+        transition: 0.5s;
+      }
+
+
+    }
+  }
+
+  &__add-new-user-button {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+
+  &__add-new-user-panel {
+    .add-new-user-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      padding: 30px 0;
+      background-color: $main-white-color;
+      border-radius: 10px;
+      max-width: 80%;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 50%;
+        width: 100%;
+        span {
+          color: $main-green-color;
+        }
+
+        input {
+          max-width: 85%;
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid $main-grey-color;
+          font-size: $text-font-size;
+          &:focus {
+            outline: none;
+            border: 1px solid $main-blue-color;
+          }
+          &:focus::placeholder {
+            color: $main-blue-color;
+          }
+          &::placeholder {
+            font-family: $text-regular;
+          }
+        }
+      }
+      .control-buttons {
+        max-width: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  &__edit-user-information-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background-color: $main-white-color;
+    border-radius: 10px;
+    max-width: 80%;
+    label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 50%;
+      width: 100%;
+      span {
+        color: $main-green-color;
+      }
+
+      input {
+        max-width: 85%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid $main-grey-color;
+        font-size: $text-font-size;
+        &:focus {
+          outline: none;
+          border: 1px solid $main-blue-color;
+        }
+        &:focus::placeholder {
+          color: $main-blue-color;
+        }
+        &::placeholder {
+          font-family: $text-regular;
+        }
+      }
+    }
+
+    .control-button {
+      button {
+        margin: 20px;
+      }
+    }
+  }
+
+}
+
+.add-new-user-confirm-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .new-user-information {
+    p {
+      font-size: $text-font-size;
+      text-align: center;
+      margin: 20px 0;
+      span {
+        color: $main-green-color;
+      }
+    }
+    .error {
+      font-size: $text-font-size;
+      text-align: center;
+      margin: 20px 0;
+      color: $main-red-color;
+      span {
+        color: $main-red-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .new-user-error {
+    color: $main-red-color;
+  }
+
+  .control-buttons {
+    button {
+      margin: 20px;
+    }
+  }
+}
+
+.confirm-post-edited-user-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .user-information {
+    display: flex;
+    justify-content: center;
+    font-size: $text-font-size;
+    align-items: center;
+
+
+    .user-prev-information {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $main-grey-opasity-color;
+      border-radius: 10px;
+      margin: 20px;
+      min-width: 300px;
+
+      div {
+        padding: 10px 0;
+
+        span {
+          color: $main-green-color;
+          padding-left: 10px;
+        }
+
+        .different {
+          text-decoration: underline;
+          font-weight: bold;
+          padding-left: 10px;
+          color: $main-blue-light-color;
+        }
+      }
+    }
+
+    .user-new-information {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $main-grey-opasity-color;
+      border-radius: 10px;
+      margin: 20px;
+      min-width: 300px;
+
+      div {
+        padding: 10px 0;
+
+        span {
+          color: $main-green-color;
+          padding-left: 10px;
+        }
+
+        .different {
+          text-decoration: underline;
+          font-weight: bold;
+          padding-left: 10px;
+          color: $main-blue-light-color;
+        }
+      }
+    }
+  }
+
+  .user-information-error {
+    color: $main-red-color;
+    font-size: $text-font-size;
+    padding: 20px;
+  }
+
+  .control-button {
+    button {
+      margin: 30px;
+    }
+  }
+}
+
+.a-group-log-mng-delete-user-modal {
+  font-size: $text-font-size;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  p {
+    padding: 10px;
+
+    span {
+      color: $main-green-color;
+      padding-left: 10px;
+    }
+  }
+
+  .control-buttons {
+    button {
+      margin: 20px;
+    }
+  }
+}

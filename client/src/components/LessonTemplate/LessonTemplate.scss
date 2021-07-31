@@ -1,0 +1,59 @@
+@import "../../style/_variables.scss";
+
+
+.lesson-template {
+  background-color: $main-white-color;
+  margin: 30px 0;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $main-dark-color;
+  &__title {
+    text-align: left;
+  }
+
+  &__title-big {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  &__title-smoll {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px 0;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+    color: inherit;
+    white-space: pre-wrap;
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 20px 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px $main-grey-color;
+    }
+  }
+
+  &__video {
+
+  }
+}

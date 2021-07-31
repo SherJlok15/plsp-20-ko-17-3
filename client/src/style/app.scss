@@ -1,0 +1,287 @@
+@import './reset.css';
+@import './variables';
+@import './fonts';
+
+
+html,body, #root, .App {
+  height: 100%;
+  background-color: $main-grey-color;
+  font-family: $text-regular;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.header {
+
+}
+
+.main {
+
+}
+
+.page-container {
+  max-width: 1200px;
+  min-width: 300px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: $text-font-size;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: $text-font-size-m;
+  }
+}
+
+.title_1 {
+  text-align: center;
+  font-size: $title_1-font-size;
+  font-weight: bold;
+  padding: 10px;
+  color: $main-dark-color;
+}
+
+.title_2 {
+  text-align: center;
+  font-size: $title_2-font-size;
+  font-weight: bold;
+  padding: 10px;
+  color: $main-dark-color;
+}
+
+.title_3 {
+  text-align: center;
+  font-size: $title_3-font-size;
+  font-weight: bold;
+  padding: 10px;
+  color: $main-dark-color;
+}
+
+@media screen and (max-width: 768px) {
+  .title_1 {
+    font-size: $title_1-font-size-m;
+  }
+
+  .title_2 {
+    font-size: $title_2-font-size-m;
+  }
+
+  .title_3 {
+    font-size: $title_3-font-size-m;
+  }
+}
+
+
+.button {
+  margin-top: 20px;
+  background-color: $main-blue-light-color;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: $main-white-color;
+  font-size: $title_3-font-size;
+  font-weight: bold;
+  font-family: $title-bold;
+  &:hover {
+    background-color: $main-blue-color;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px $main-dark-color;
+  }
+  &:focus {
+    outline: none;
+    color: $main-red-color;
+  }
+}
+
+.button--disabled {
+  margin-top: 20px;
+  background-color: $main-grey-color;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: $main-white-color;
+  font-size: $title_3-font-size;
+  font-weight: bold;
+  font-family: $title-bold;
+  &:hover {
+    background-color: $main-dark-color;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px $main-dark-color;
+  }
+  &:focus {
+    outline: none;
+    color: $main-red-color;
+  }
+}
+
+.smoll-botton-delete {
+  background-color: $main-red-opasity-color;
+  font-size: $little-text-font-size;
+  color: $main-white-color;
+  padding: 7px;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: none;
+  margin: 3px;
+  &:hover {
+    cursor: pointer;
+    background-color: $main-red-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $main-blue-color;
+  }
+}
+
+.smoll-botton-delete--disabled {
+  background-color: $main-grey-color;
+  font-size: $little-text-font-size;
+  color: $main-white-color;
+  padding: 7px;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: none;
+  margin: 3px;
+  &:hover {
+    cursor: pointer;
+    background-color: $main-dark-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $main-blue-color;
+  }
+}
+
+.smoll-botton-control {
+  background-color: $main-blue-light-color;
+  font-size: $little-text-font-size;
+  color: $main-white-color;
+  padding: 7px;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: none;
+  margin: 3px;
+  &:hover {
+    cursor: pointer;
+    background-color: $main-blue-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $main-red-color;
+  }
+}
+
+.smoll-botton-control--disabled {
+  background-color: $main-grey-color;
+  font-size: $little-text-font-size;
+  color: $main-white-color;
+  padding: 7px;
+  border-radius: 10px;
+  transition: 0.2s;
+  border: none;
+  margin: 3px;
+  &:hover {
+    cursor: pointer;
+    background-color: $main-dark-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $main-red-color;
+  }
+}
+
+.test-button {
+  margin-top: 20px;
+  background-color: $main-red-opasity-color;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: $main-white-color;
+  font-size: $title_3-font-size;
+  font-weight: bold;
+  font-family: $title-bold;
+  &:hover {
+    background-color: $main-red-color;
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px $main-dark-color;
+  }
+  &:focus {
+    outline: none;
+    color: $main-blue-color;
+  }
+}
+
+.test-button--disabled {
+  margin-top: 20px;
+  background-color: $main-dark-color;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: $main-grey-color;
+  font-size: $title_3-font-size;
+  font-weight: bold;
+  font-family: $title-bold;
+  &:hover {
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px $main-dark-color;
+    color: $main-white-color;
+  }
+  &:focus {
+    outline: none;
+    color: $main-blue-color;
+  }
+}
+
+.edit-button {
+  margin-top: 20px;
+  background-color: $main-orange-opasity-color;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  color: $main-grey-color;
+  font-size: $title_3-font-size;
+  font-weight: bold;
+  font-family: $title-bold;
+  &:hover {
+    border-radius: 15px;
+    box-shadow: 1px 1px 15px $main-dark-color;
+    color: $main-white-color;
+    background-color: $main-orange-color;
+  }
+  &:focus {
+    outline: none;
+    color: $main-blue-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .button, .button--disabled, .test-button, .test-button--disabled, .edit-button {
+    font-size: $title_3-font-size-m;
+  }
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-white-color;
+  padding: 30px;
+  img {
+    width: 50px;
+  }
+}
